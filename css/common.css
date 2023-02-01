@@ -1,0 +1,306 @@
+@charset "utf-8";
+
+.row {
+    margin: 0 auto;
+    padding: 0 10px
+}
+#header .headerFixed{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 60px;
+    height: 100px;
+    background: #fff;
+    z-index: 9999;
+}
+#section.active { 
+    display:none;
+}
+
+#header .open {
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+#header .open.active { display:none}
+
+#header .headerT {
+    position: fixed;
+    background-color: #32343e;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    padding: 8px 0;
+    z-index: 999;
+}
+
+#header .headerT>div {
+    display: block;
+    text-align: center;
+}
+
+#header .headerT>div.headerbtn1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -55%);
+
+}
+
+#header .headerT button {
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+
+#header .headerT button:hover {
+    width: 100px;
+}
+
+
+#header .headerT .headerbtn1 button {
+    background: url(../img/ico_frame_desktop.png) no-repeat center;
+}
+
+
+#header .row {
+    position: relative
+}
+
+#header h1 {
+    color: rgba(0, 0, 0, .9);
+    position: absolute;
+    left: 1%;
+    top: 20px;
+    display: inline-block;
+    z-index: 20;
+}
+.homeLogo.logo1.active { display:none;}
+
+
+#header .btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* cd */
+
+#header .cd {
+    display: none;
+    position: relative;
+    z-index: 9999999;
+    margin: 66px 0 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;;
+    
+}
+.cd .cd_close { 
+    position:absolute;
+    right:70px;
+    top:36px;
+    font-size:30px;
+    cursor: pointer;
+    
+}
+#header .cd.active {
+    display: block;
+}
+
+#header .cd_full {
+    width: 1024px;
+    margin: 0 auto;
+
+}
+
+#header .cd_nav {
+    float: left;
+    width: 60%;
+}
+
+
+#header .cd_full h2 {
+    position: relative;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 30px 0 50px;
+    width: 200px;
+}
+
+#header .cd_full h2:after {
+    content: '';
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    width: 54px;
+    height: 1px;
+    background: #000;
+}
+
+#header .cd_nav .cdSection .first {
+    font-size: 30px;
+    padding: 10px 0 15px;
+}
+
+#header .cd_nav .cdSection .first.intro {
+    padding: 50px 0 15px;
+}
+
+.sectionBig>li {
+    padding: 50px 0 0px
+}
+
+.sectionBig a {
+    color: rgba(0, 0, 0, 0.8)
+}
+
+.sectionSmall {
+    padding: 30px 0 25px;
+}
+
+.sectionSmall li {
+    float: left;
+    padding: 0 25px 0 0;
+}
+
+.sectionSmall li a {
+    font-size: 17px;
+}
+
+#header .cd_nav2 {
+    float: left;
+    width: 40%;
+    color: #252525;
+    
+}
+
+.nav2_full {
+    width: 335px;
+}
+
+.nav2_full .nav2_full_right {
+    text-align: right;
+    padding:50px 0 0;
+}
+
+.nav2_full .nav2_full_right ul li {
+    margin-bottom: 60px;;
+}
+
+.cd_nav2 h3 {
+    font-size: 25px;
+    display: inline-block;
+    line-height: 35px;
+}
+
+.cd_nav2 p {
+    font-size: 1.2rem;
+}
+
+.nav2_full_right ul li div {
+    font-size: 19.2px;
+    margin-bottom: 20px;
+}
+
+.cd_nav2 .cd_sns img {
+    width: 45px;
+    height: 45px;
+}
+.cd_nav2 .cd_sns img ~ img { margin:0 0 0 5px;}
+
+
+
+/* #nav 구역 */
+#nav {
+    position: absolute;
+    top: 0px;
+    background-color: #fff;
+    left: 0;
+    width: 100%;
+    z-index: 13;
+    margin: 0px auto 0 auto;
+}
+
+#nav .navUl {
+    overflow: hidden;
+    list-style-type: none;
+    width: 1200px;
+    padding-left: 150px;
+    padding-right: 150px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+#nav .navUl.active { display:none;}
+#nav .navUl .menu {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.depth1 {
+    padding: 0;
+    font-size: 18px;
+    letter-spacing: -0.3px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: block;
+    line-height: 100px;
+    box-sizing: border-box;
+}
+
+.depth1>a {
+    transition: all 0.5s;
+}
+
+.depth1>a:hover {
+    color: red
+}
+
+.depth2 {
+    height: 0;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.depth2>ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: #888;
+}
+
+.depth2>ul>li>a {
+    padding: 5px 0;
+    border-radius: 5px 5px;
+    display: block;
+    transition: all 0.5s;
+    height: 30px;
+    line-height: 30px;
+}
+
+.depth2>ul>li>a:hover {
+    color: red
+}
+
+#nav .navUl:hover .depth2 {
+    height: 235px;
+}
+
+#section img {
+    display: block;
+}
+
+
+/* footer 구역 */

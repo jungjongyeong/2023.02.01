@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+@media screen and (max-width:1170px) {
+    #header .headerFixed{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 40px;
+        height: 100px;
+        background: none;
+        z-index: 9999;
+    }
+
+    #header .headerT {
+        position: fixed;
+        background-color: #32343e;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 40px;
+        padding: 8px 0;
+        z-index: 999;
+    }
+
+    #header .headerT>div {
+        display: none;
+        text-align: center;
+    }
+
+    #nav {
+        display: none;
+        position: absolute;
+        top: 0px;
+        background-color: #fff;
+        left: 0;
+        width: 100%;
+        z-index: 13;
+        margin: 0px auto 0 auto;
+    }
+
+    #header .open {
+        display: block;
+        position: absolute;
+        right: 50px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 20;
+
+    }
+    #header .open.active { display:none}
+
+    #header .open i {
+        text-align: center;
+        background-color: rgba(255,255,255,0.9);
+        width: 54px;
+        height: 54px;
+        vertical-align: auto;
+    }
+
+    #header .open i::before {
+        display: block;
+        margin: 10px 0 0;
+    }
+    #header .cd {
+        display: none;
+        position: relative;
+        z-index: 9999999;
+        margin: 30px 0 0;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 100%;
+        background-color: #fff;
+    }
+    #header .cd_full {
+        width: 1024px;
+        padding: 53px 0 0 131px
+    }
+    #header .cd_nav2 {
+        float: none;
+        width: 40%;
+        color: #252525;
+        
+    }
+    .nav2_full .nav2_full_right {
+        text-align: left;
+        padding:50px 0 0;
+    }
+    #header .cd h1 .homeLogo img{
+    }
+}
+
+@media screen and (max-width:1024px) {
+    #header .cd {
+        display: none;
+        position: relative;
+        z-index: 9999999;
+        margin: 43px 0 0;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 100%;
+        background-color: #fff;
+    }
+    #header .cd_full {
+        width: 1024px;
+        padding: 0 0 0 40px
+    }
+    #header .cd_nav2 {
+        float: none;
+        width: 40%;
+        color: #252525;
+        
+    }
+    .nav2_full .nav2_full_right {
+        text-align: left;
+        padding:50px 0 0;
+    }
+    #header .cd h1 .homeLogo img{
+        display:none;
+    }
+}
+
+
